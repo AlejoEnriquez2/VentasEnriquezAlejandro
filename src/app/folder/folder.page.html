@@ -18,7 +18,7 @@
     <ion-list-header>
     </ion-list-header>
 
-    <ion-item *ngFor="let producto of productos | async; trackBy: trackByFn">
+    <ion-item *ngFor="let producto of productos | async">
       <ion-avatar slot="start">
         <img [src]="producto.imagen.url">
       </ion-avatar>

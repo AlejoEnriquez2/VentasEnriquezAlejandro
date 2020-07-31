@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class CarritoPage implements OnInit {
 
   carrito : Carrito = new Carrito;
-  producto : Producto = new Producto;
+  productos : Array<Producto> = new Array<Producto>();
   c : Observable<any>
   d : Observable<any>
 
@@ -23,11 +23,9 @@ export class CarritoPage implements OnInit {
   }
 
   listarProductos(){
-    this.c = this.ProductoService.obtenerProductos()
-    this.c.subscribe(data=>{
-      this.carrito.productos = data     
+    this.ProductoService.getCarrito().subscribe(datos =>{
+      this.productos = datos.productos;
     })
-    
   }
 
   trackByFn(index, obj) {
