@@ -3,19 +3,29 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>Productos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
+      <ion-title size="large">Productos</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-list-header>
+    </ion-list-header>
+
+    <ion-item *ngFor="let producto of productos | async; trackBy: trackByFn">
+      <ion-avatar slot="start">
+        <img [src]="producto.imagen.url">
+      </ion-avatar>
+      <ion-label (click)="mostrarProducto(producto.uid)">
+        <h2>{{producto.nombre}}</h2>
+        <h3>{{producto.precio}}</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

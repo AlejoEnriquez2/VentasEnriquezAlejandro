@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="(producto | async) as producto">
+
+  <ion-card>
+    <img [src]="producto.imagen.url">
+    <ion-card-header>
+      <ion-card-subtitle>Producto</ion-card-subtitle>
+      <ion-card-title>{{producto.nombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{producto.precio}}
+    </ion-card-content>
+    <ion-card-content>
+        <ion-button (click)="agregarProducto(producto.uid)">Agregar al Carrito</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

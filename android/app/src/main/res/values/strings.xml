@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">VentasEnriquezAlejandro</string>
+    <string name="title_activity_main">VentasEnriquezAlejandro</string>
+    <string name="package_name">ec.edu.ups.pm.ventas</string>
+    <string name="custom_url_scheme">ec.edu.ups.pm.ventas</string>
+</resources>
