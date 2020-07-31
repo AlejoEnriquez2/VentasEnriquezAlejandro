@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "800659004826",
+    "firebase_url": "https://ventasenriquezalejandro.firebaseio.com",
+    "project_id": "ventasenriquezalejandro",
+    "storage_bucket": "ventasenriquezalejandro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800659004826:android:82fb6346654def41ec2e23",
+        "android_client_info": {
+          "package_name": "ec.edu.ups.pm.ventas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800659004826-c94t363qli1q0q3t82h82e2q42qofesj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfIZbW7OCqn3LTGQ2ompb_LcCcFnsCbNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800659004826-c94t363qli1q0q3t82h82e2q42qofesj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
